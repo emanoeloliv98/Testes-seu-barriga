@@ -51,9 +51,9 @@ describe('barriga', ()=> {
         cy.get('.btn').click();
 
         //verificar a lista e  excluir um elemento da lista
-        cy.contains('Contas').click();
-        cy.contains('Listar').click();
-        //cy.get('').click();
+        //cy.contains('Contas').click();
+        //cy.contains('Listar').click();
+        //cy.get('[href="/removerConta?id=700643"] > .glyphicon').click();
 
 
 
@@ -86,6 +86,10 @@ describe('barriga', ()=> {
         cy.get('.btn').click();
 
         cy.get(':nth-child(4) > a').click();
+
+        //Assert para verificar se o elemento da lista existe no DOM
+        cy.get('tbody > tr > :nth-child(1)').should('exist');
+
 
     });
 
