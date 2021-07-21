@@ -88,7 +88,7 @@ describe('barriga', ()=> {
         cy.get(':nth-child(4) > a').click();
 
         //Assert para verificar se o elemento da lista existe no DOM
-        cy.get('tbody > tr > :nth-child(1)').should('exist');
+        cy.get('tbody > tr > :nth-child(1)').should('be.visible');
 
 
     });
