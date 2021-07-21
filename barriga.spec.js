@@ -68,7 +68,7 @@ describe('barriga', ()=> {
         cy.get(':nth-child(3) > a').click();
         cy.get('#data_transacao').type('10/07/2021');
         cy.get('#data_pagamento').type('26/08/2021');
-        cy.get('#descricao').type('Pagar o concerto do carro');
+        cy.get('#descricao').type('Pagar o conserto do carro');
         cy.get('#interessado').type('Eu mesmo');
         cy.get('#valor').type('1500');
         cy.get('#status_pago').click();
@@ -89,7 +89,6 @@ describe('barriga', ()=> {
 
         //Assert para verificar se o elemento da lista existe no DOM
         cy.get('tbody > tr > :nth-child(1)').should('be.visible');
-
 
     });
 
