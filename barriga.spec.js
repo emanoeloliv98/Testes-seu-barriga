@@ -15,6 +15,9 @@ describe('barriga', ()=> {
         //Assert para verificar se o elemento do botão "cadastrar" exite dentro do DOM
         cy.get('.btn').should('exist');
 
+        //Assert caso já exista o endereço de e-mail cadastrado 
+        expect('Endereço de email já utilizado').be.eq('Endereço de email já utilizado');
+
     });
 
     it('devem poder realizar login', ()=>{
